@@ -10,9 +10,4 @@
     <None Remove="ProcessBillWithPromotionTest\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="BusinessLayer\" />
-    <Folder Include="DataAccess\" />
-  </ItemGroup>
-
 </Project>
