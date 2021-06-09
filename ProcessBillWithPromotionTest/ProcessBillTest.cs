@@ -45,9 +45,6 @@ namespace ProcessBillWithPromotionTest
         [Fact]
         public void ProcessFinalBillTest_Scenario_2()
         {
-            //delegate List<CartItems> delegateMockGetCartItems();
-            //MockBillDAL obj = new MockBillDAL();
-
             billDAL = new Mock<BillDAL>();
             billDAL.Setup(x => x.GetCartItems()).Returns(
                 new List<CartItems>
@@ -81,15 +78,12 @@ namespace ProcessBillWithPromotionTest
 
             _processBill = ProcessBillObj;
             var result = _processBill.ProcessFinalBill();
-            Assert.Equal(270, result);
+            Assert.Equal(280, result);
         }
 
         [Fact]
         public void ProcessFinalBillTest_Scenario_4()
         {
-            //delegate List<CartItems> delegateMockGetCartItems();
-            //MockBillDAL obj = new MockBillDAL();
-
             billDAL = new Mock<BillDAL>();
             billDAL.Setup(x => x.GetCartItems()).Returns(
                 new List<CartItems>
