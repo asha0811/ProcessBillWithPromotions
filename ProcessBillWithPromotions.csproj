@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ProcessBillWithPromotionTest\**" />
+    <EmbeddedResource Remove="ProcessBillWithPromotionTest\**" />
+    <None Remove="ProcessBillWithPromotionTest\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BusinessLayer\" />
+    <Folder Include="DataAccess\" />
+  </ItemGroup>
+
+</Project>
